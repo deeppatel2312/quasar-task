@@ -1,0 +1,122 @@
+.hero-banner-wrapper {
+    background-color: $primary;
+    color: $white;
+    padding: 70px 0px;
+
+    .text-wrap {
+        h6 {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.q-carousel {
+    background-color: transparent;
+}
+
+.q-carousel__slide {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.q-img__image {
+    box-shadow: 0px 15px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    object-fit: contain !important;
+}
+
+.secondSlider .carousel__item {
+    height: 80px;
+    width: 100%;
+    background-color: #73e6ff73;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSlider .carousel__viewport {
+    // overflow: visible;
+}
+
+.secondSlider .carousel__slide {
+    padding: 5px;
+}
+
+.secondSlider .carousel__prev,
+.secondSlider .carousel__next {
+    display: none;
+}
+
+// .firstSlider .carousel__slide--next {
+//     z-index: -1;
+//     position: relative;
+//     left: -120px;
+// }
+
+// .firstSlider .carousel__slide--prev {
+//     z-index: -1;
+//     position: relative;
+//     left: 120px;
+// }
+
+.firstSlider .carousel__slide {
+    padding: 5px;
+}
+
+.firstSlider .carousel__viewport {
+    perspective: 2000px;
+}
+
+.firstSlider .carousel__track {
+    transform-style: preserve-3d;
+}
+
+.firstSlider .carousel__slide--sliding {
+    transition: 0.5s;
+}
+
+.firstSlider .carousel__slide {
+    opacity: 0.9;
+    transform: rotateY(0deg) scale(0.9);
+}
+
+.firstSlider .carousel__slide--active ~ .carousel__slide {
+    transform: rotateY(0deg) scale(0.9);
+    z-index: -1;
+}
+
+.firstSlider .carousel__slide--prev {
+    opacity: 1;
+    transform: rotateY(0deg) scale(0.95) translateX(80px);
+}
+
+.firstSlider .carousel__slide--next {
+    opacity: 1;
+    transform: rotateY(0deg) scale(0.95) translateX(-80px) !important;
+}
+
+.firstSlider .carousel__slide--active {
+    opacity: 1;
+    transform: rotateY(0) scale(1.1);
+}
+
+.firstSlider .carousel__slide .carousel__item img {
+    border-radius: 6px;
+}
+
+.firstSlider .carousel {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.firstSlider .carousel__viewport {
+    height: 600px;
+}
+
+.firstSlider .carousel__track {
+    height: 600px;
+}
