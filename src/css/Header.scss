@@ -1,0 +1,28 @@
+.desktopMenu {
+    display: block;
+}
+
+.mobileMenu {
+    display: none;
+
+    .subMenu {
+        background-color: $white;
+        color: #08a7ca;
+    }
+
+    .q-toolbar {
+        .q-item {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .desktopMenu {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+}

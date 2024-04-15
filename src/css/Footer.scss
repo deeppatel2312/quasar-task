@@ -1,0 +1,103 @@
+.footerComponent {
+    padding: 95px 0px;
+    background-color: #fbfbfb;
+
+    &__LogoWrapper {
+        max-width: 247px;
+        span {
+            display: block;
+            color: #343741;
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 21px;
+            margin: 16px 0px 18px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 8px;
+                a {
+                    color: #5e626f;
+                    font-size: 13px;
+                    font-weight: 900;
+                    line-height: 19px;
+
+                    &:hover {
+                        color: #08a7ca;
+                    }
+                }
+            }
+        }
+    }
+
+    &__LinksWrapper {
+        padding: 16px;
+        background: $white;
+        border-radius: 12px;
+
+        span {
+            display: block;
+            padding: 12px 0px 16px;
+        }
+
+        a {
+            color: #5e626f;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+    }
+
+    &__LeftLinks {
+        margin-top: 45px;
+        span {
+            display: block;
+            font-size: 13px;
+            font-weight: 900;
+            line-height: 19px;
+            color: #5e626f;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__RightLinks {
+        margin-top: 45px;
+        p {
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 18px;
+            color: #343741;
+        }
+
+        span {
+            display: block;
+            font-size: 13px;
+            font-weight: 900;
+            line-height: 19px;
+            color: #5e626f;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footerComponent {
+        padding: 45px 0px;
+
+        .col-lg-3 {
+            width: 50%;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        &__LeftLinks {
+            .flex {
+                div {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

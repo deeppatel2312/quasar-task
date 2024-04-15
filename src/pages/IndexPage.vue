@@ -8,7 +8,6 @@
 
 import HeroBanner from 'components/HeroBanner.vue'
 
-
 defineOptions({
   name: 'IndexPage'
 });
